@@ -1,0 +1,1050 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*--------------------- Header section start -----------------*/
+
+header {
+  border-bottom: 1px solid #00000033;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+.navbar{
+  padding: 0;
+}
+/* logo section start*/
+.logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.65rem;
+  color: #000000;
+}
+/* nav bar links section start */
+.links {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+.links a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+/* links section end */
+
+/* header button start */
+.registerBtn {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 1.5rem;
+  padding: 16px 24px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25px;
+  color: #ffffff;
+  border: none;
+}
+/* header button end */
+
+/* -------------------Header section end ----------------------- */
+
+/* -----------main section start ------------------------------ */
+
+/* -----hero section----- */
+
+.hero .heroImage {
+  height: 900px;
+ 
+  padding: 0;
+}
+.heroDetails {
+  gap: 44px;
+  /* width: 30%; */
+}
+.heroImage img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .heroDetails .heading {
+  gap: 28px;
+
+}
+
+.container-fluid .heroDetails .heading h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 6.15rem;
+  margin: 0;
+  word-break: keep-all;
+ 
+}
+.heroDetails p {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #00000099;
+}
+.search-bar input[type="text"] {
+  max-width: 366px;
+  border-radius: 24px 0px 0px 24px;
+  padding: 20px 18px 20px 18px;
+  background-color: #fafafa;
+  border: 1px solid #00000033;
+}
+.searchButton {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 0px 24px 24px 0px;
+  padding: 20px 24px 20px 24px;
+  border: none;
+  max-width: 146px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.search-bar ::placeholder {
+  color: #aaaaaa;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.comment1 {
+  position: absolute;
+  background-color: #5a5a5a;
+  border-radius: 50px;
+  font-family: "Poppins" sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: white;
+  padding: 8px 18px;
+  top: 586px;
+  right: 80px;
+  width: max-content;
+}
+.comment2 {
+  width: max-content;
+  position: absolute;
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 24px;
+  font-family: "Poppins" sans-serif;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: white;
+  padding: 5px 12px;
+  top: 195px;
+  right: 460px;
+}
+.comment3 {
+  position: absolute;
+  border-radius: 15px;
+  background-color: #00000024;
+  padding: 17px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 246px;
+  height: 158px;
+  top: 514px;
+  right: 330px;
+  backdrop-filter: blur(15px);
+}
+.microscope {
+  background-color: black;
+  width: max-content;
+  padding: 10px;
+  border-radius: 8px;
+}
+.internship {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 22px;
+}
+
+.comment1,
+.comment2,
+.comment3::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*------------------------- company Growth section-----------------------*/
+.company-growth {
+  margin-top: 137px;
+  margin-bottom: 127px;
+  justify-content: space-between;
+}
+.company-growth h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 0;
+}
+.company-growth p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  color: #00000099;
+}
+.company-growth .commitments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.company-growth .commitments h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: -1px;
+  word-break: break-all;
+}
+.company-growth .commitments p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #00000099;
+}
+.learnMore {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #3461ff;
+}
+/*------------------------ Company growth section end------------- */
+
+/* -------------internshipDetails section start -----------------------*/
+.internshipDetails {
+  padding: 122px 0px 72px 100px;
+  background-color: #f5f7f9;
+}
+
+.internshipHeading h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 0;
+}
+.internshipHeading p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #00000099;
+  margin: 0;
+}
+
+.nextButton {
+  padding-right: 116px;
+}
+.nextButton button {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: none;
+}
+
+.nextButton .previous, .next {
+  background-color: inherit;
+}
+.nextButton .previous, .next i{
+    color: #0000004d
+}
+.nextButton .previous:hover,
+.nextButton .next:hover{
+  background-color: #868cff;
+}
+.nextButton .previous:hover i{
+    color: white;
+}
+.nextButton .next:hover i{
+    color: white;
+}
+.nextButton .previous-button, .next-button {
+  background-color: inherit;
+}
+.nextButton .previous-button, .next-button i{
+    color: #0000004d
+}
+.nextButton .previous-button:hover,
+.nextButton .next-button:hover{
+  background-color: #868cff;
+}
+.nextButton .previous-button:hover i{
+    color: white;
+}
+.nextButton .next-button:hover i{
+    color: white;
+}
+.internSheep-carousel .owl-nav{
+    display: none;
+}
+.popular-carousel .owl-nav{
+  display: none;
+}
+.internshipCourse1 {
+  gap: 40px;
+  overflow-y: auto;
+  margin-top: 52px;
+  padding-bottom: 15px;
+}
+.internshipCourse .card {
+  
+  padding: 20px 30px;
+  gap: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.internshipCourse .card .cardImg{
+    max-width: 300px;
+    max-height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.internshipCourse .card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.internshipCourse .card-body {
+  padding: 0;
+  gap: 15px;
+}
+.internshipCourse .card-body p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.internshipCourse .card-body button {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 24px;
+  padding: 15px 20px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.85px;
+  line-height: 0.75rem;
+  color: #ffffff;
+}
+/* ----------------------internship section end----------------- */
+
+/* --------------guidelifyWork section start -----------------*/
+.guidelifyWork {
+  margin-right: 100px;
+  padding: 120px 0px 72px 0px;
+  overflow: hidden;
+}
+
+.workDetail {
+  padding: 27px 120px 0px 100px;
+}
+.workDetail h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: -1px;
+}
+.workDetail p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #00000099;
+  line-height: 2.25rem;
+  font-size: 1.125rem;
+  word-break: keep-all;
+}
+.WorkFlow {
+  margin-top: 42px;
+  gap: 42px;
+}
+.WorkFlow h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.gap1 {
+  gap: 32px;
+}
+.WorkFlowDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.workImage {
+  position: relative;
+}
+.workImage img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.caption {
+  position: absolute;
+  top: 600px;
+  left: 36px;
+  max-width: 547px;
+  max-height: 270px;
+  background-color: #fff2f221;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 30px;
+}
+.captionHeader {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 24px;
+  width: max-content;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1rem;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 25px;
+}
+.caption p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: white;
+}
+.caption::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*-------------------- guidelifyWork section end------------ */
+
+/*------------------------- banner section  start---------- */
+.banner {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  padding: 90px 55px 90px 75px;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+  margin: 102px 0px;
+}
+.bannerHeader {
+  z-index: 99;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5.43rem;
+  letter-spacing: -1px;
+  color: white;
+}
+.bannerDetail {
+  z-index: 99;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: white;
+}
+.bannerDetail button {
+  border-radius: 64px;
+  padding: 16px 48px;
+  width: max-content;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.round {
+  background: linear-gradient(to left, #3461ff 10.7%, #8399e9 103.87%);
+  width: 463.69px;
+  height: 460.72px;
+  border-radius: 50%;
+  position: absolute;
+  top: -44px;
+  left: 255px;
+  z-index: 1;
+}
+.round2 {
+  background: linear-gradient(to left, #3461ff 10.7%, #8399e9 103.87%);
+  width: 463.69px;
+  height: 460.72px;
+  position: absolute;
+  top: -44px;
+  left: 10px;
+  z-index: 0;
+}
+.round3 {
+  background: linear-gradient(to left, #3461ff 10.7%, #8399e9 103.87%);
+  width: 463.69px;
+  height: 460.72px;
+  position: absolute;
+  top: -44px;
+  left: -210px;
+  z-index: 1;
+  border-radius: 50%;
+}
+.round4 {
+  background: linear-gradient(to left, #3461ff 10.7%, #8399e9 103.87%);
+  width: 463.69px;
+  height: 460.72px;
+  position: absolute;
+  top: -44px;
+  left: -420px;
+  z-index: 2;
+  border-radius: 50%;
+}
+/* -------------Banner section end--------------- */
+
+/* ----------leader-board section start------- */
+.leader-board {
+  margin: 119px 0px 115px 0px;
+}
+.contentMaker {
+  gap: 20px;
+}
+.contentMaker img {
+  aspect-ratio: 1/1;
+  border-radius: 26.34px;
+  object-fit: cover;
+}
+.contentMaker div {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.boardCaption h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.boardCaption p {
+  font-family: "DM Sans", sans-serif;
+  font-family: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #00000099;
+  margin: 0;
+}
+.boardCaption button {
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  padding: 15px 20px;
+  border-radius: 24px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: white;
+  width: 302px;
+  margin-top: 10px;
+}
+/* ----------Student Feedback section start----------- */
+
+.studentFeedback {
+  padding: 94px 0px 106px 120px;
+}
+.feedbackHeading h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 0;
+}
+
+.owl-carousel {
+  display: flex;
+  margin-top: 58px;
+}
+
+.item {
+  flex: 0 0 auto;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 73px 40px 40px;
+  border-radius: 30px;
+  gap: 19px;
+  background-color: #f8f9ff;
+  color: black;
+}
+
+.studentImage {
+  width: 85px;
+  height: 85px;
+}
+.studentImage img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.feedback h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+}
+.feedback .studentPosition {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+}
+.feedback .studentWords {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.feedback:hover {
+  background-color: #868cff;
+  color: white;
+}
+.prevBtn:hover,
+.nextBtn:hover {
+  background-color: #868cff;
+}
+.nextButton i {
+  color: #0000004d;
+}
+.nextButton .prevBtn:hover i,
+.nextButton .nextBtn:hover i {
+  color: white; /* Change arrow color to white on hover */
+}
+.studentDetail {
+  gap: 20px;
+}
+/* ------------- Company logo section start-----------*/
+.companyForHire {
+  background-color: #fafafa;
+}
+.companyLogos {
+  padding-top: 78px;
+  gap: 95px;
+}
+.companyLogos h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.companyLogos .row > div {
+  margin-bottom: 94px;
+}
+/* company logo section end */
+
+/* Help-desk section start */
+.helpDesk {
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+.questions {
+  border-top: 1px solid #00000033;
+  border-bottom: 1px solid #00000033;
+}
+.questions h1 {
+  padding: 32px 10px;
+  font-family: "Poppins", sans-serif;
+  font-family: 500;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  margin: 0;
+}
+.questions .plusSign {
+  width: 20px;
+  height: 20px;
+  background-color: #3461ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.companyHelp {
+  gap: 42px;
+}
+.companyHelp h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -1px;
+}
+.companyHelp p {
+  margin: 0;
+  color: #00000099;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  word-break: keep-all;
+}
+.companyHelp input[type="text"] {
+  padding: 20px 18px;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 37px;
+  width: 312px;
+}
+.companyHelp::placeholder {
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.companyHelp button {
+  padding: 15px 20px;
+  border: none;
+  background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  border-radius: 24px;
+  width: 144px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+.moreQuestions {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #3461ff;
+  text-decoration: underline;
+}
+/* Help-desk section end */
+
+/*---Footer section start  */
+footer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+footer .copyRight {
+  background-color: #000000;
+  color: white;
+  padding: 50px 85px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyRight * div {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+footer .terms-condition {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+footer .companyDetail {
+  padding: 65px 130px;
+  background-color: #fafafa;
+}
+footer .companyWorkDetail {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+footer .companyWorkDetail > div {
+  padding: 0;
+  margin-bottom: 48px;
+}
+footer .socialMediaDetail .logo {
+  margin-bottom: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16.93px;
+  line-height: 41.12px;
+}
+/* footer section end */
+
+@media screen and (max-width:991px){
+  .heroDetails{
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+    
+  }
+  .search-bar{
+    display: flex;
+    justify-content: center;
+  }
+  .comment1{
+    right: 100px;
+  }
+  .comment2{
+    right: 500px;
+  }
+  .comment3{
+    left: 90px;
+  }
+  .caption{
+    top: 800px;
+  }
+  .bannerHeader{
+    font-size: 3rem;
+  }
+  .round{
+    top:-10px
+  }
+  .round2{
+    top:-10px
+  }
+  .round3{
+    top:-10px
+  }
+  .round4{
+    top:-10px
+  }
+  
+  footer .socialMediaDetail .logo {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:767px){
+  
+  .container-fluid .heroDetails .heading h1 {
+    font-size: 5rem;
+  }
+  .internshipDetails {
+    padding: 50px 0px 72px 80px;
+  }
+  .internshipDetails h1{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .caption{
+    top: 650px;
+  }
+  .guidelifyWork{
+    padding-top: 0;
+  }
+  .banner{
+    padding: 50px 55px 50px 75px;
+  }
+  .bannerHeader{
+    font-size: 1.5rem;
+  }
+  .comment1{
+    right: 10px;
+  }
+  .comment2{
+    top:80px;
+    right: 300px;
+  }
+  .round{
+    top:0px
+  }
+  .round2{
+    top:0px
+  }
+  .round3{
+    top:0px
+  }
+  .round4{
+    top:0px
+  }
+  .studentFeedback {
+    padding: 94px 0px 106px 80px;
+  }
+  .studentFeedback h1{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  footer .terms-condition{
+    gap: 25px;
+  }
+  
+}
+@media screen and (max-width:575px){
+  .container-fluid .heroDetails .heading h1 {
+    font-size: 3rem;
+  }
+  .heroDetails{
+    padding-top:50px;
+    padding-bottom: 40px;
+    
+  }
+  .feedbackHeading h1{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .company-growth .commitments{
+    text-align: center;
+  }
+  .internshipDetails {
+    padding: 40px 0px 72px 50px;
+  }
+  .internshipHeading h1{
+    font-size: 2.5rem;
+  }
+  .nextButton {
+    padding-right: 40px;
+  }
+  .caption{
+    top: 450px;
+    max-width:400px ;
+  }
+  .workDetail h1{
+    font-size: 2.5rem;
+  }
+  .workDetail p{
+    font-size: 1rem;
+  }
+  .WorkFlow h1{
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+  .WorkFlow p{
+    font-size: .75rem;
+  }
+  .bannerDetail button{
+    padding:  8px 16px ;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .boardCaption{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+ 
+  .boardCaption h1{
+    font-size: 2rem;
+    line-height: 4rem
+  }
+  .companyLogos{
+    padding: 90px 50px 0px 50px;
+    gap: 60px;
+  }
+  .companyLogos .row > div {
+    margin-bottom: 40px;
+  }
+  .helpDesk {
+    padding: 70px 50px;
+  }
+  .questions h1 {
+    padding: 16px 5px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0;
+  }
+  .companyHelp{
+    margin-top: 50px;
+  }
+  .companyHelp h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -1px;
+  }
+  .companyHelp p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  footer .copyRight{
+    padding: 50px 60px 50px 60px;
+    display: block;
+  }
+  footer .terms-condition {
+    margin-top: 20px;
+  }
+  footer .companyDetail {
+    padding: 40px 80px;
+    background-color: #fafafa;
+  }
+  .socialMediaIcon >div{
+    width: max-content;
+    display: flex;
+ 
+  }
+  footer .companyWorkDetail {
+    margin-top: 20px;
+  }
+  footer .companyWorkDetail > div {
+    margin-bottom: 20px;
+    width:150px;
+    
+  }
+  .company-growth h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .company-growth p {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .growth > div{
+    margin-bottom: 10px;
+    
+  }
+  .company-growth .commitments h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .company-growth .commitments p {
+    font-size: 1rem;
+    line-height:1.5rem;
+  }
+}
