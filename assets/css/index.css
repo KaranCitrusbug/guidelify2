@@ -8,24 +8,23 @@
 a {
   text-decoration: none;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*--------------------- Header section start -----------------*/
 
 header {
   border-bottom: 1px solid #00000033;
-  padding: 16px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: white;
 }
-.navbar{
-  padding: 0;
-}
+
 /* logo section start*/
 .logo {
   font-family: "Inter", sans-serif;
@@ -34,14 +33,18 @@ header {
   line-height: 2.65rem;
   color: #000000;
 }
+/* logo section end*/
+
 /* nav bar links section start */
-.links {
-  display: flex;
-  gap: 40px;
-  justify-content: space-around;
-  align-items: center;
+.navbar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
-.links a {
+.navbar-nav {
+  gap: 40px;
+}
+.nav-link {
+  padding: 0;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -49,19 +52,32 @@ header {
   line-height: 1.5rem;
   color: #000000;
 }
+.show{
+  margin-top: 20px;
+ 
+}
+.show ul{
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
 /* links section end */
 
 /* header button start */
 .registerBtn {
   background: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
   border-radius: 1.5rem;
+  border: none;
   padding: 16px 24px;
+}
+.registerBtn p {
+  margin: 0;
   font-family: "DM Sans", sans-serif;
   font-size: 1rem;
-  line-height: 1.25px;
+  line-height: 1.25rem;
   color: #ffffff;
-  border: none;
+  font-weight: 500;
 }
+
 /* header button end */
 
 /* -------------------Header section end ----------------------- */
@@ -72,12 +88,12 @@ header {
 
 .hero .heroImage {
   height: 900px;
- 
+
   padding: 0;
 }
 .heroDetails {
   gap: 44px;
-  /* width: 30%; */
+  padding-left: 10%;
 }
 .heroImage img {
   width: auto;
@@ -89,7 +105,6 @@ header {
 }
 .container-fluid .heroDetails .heading {
   gap: 28px;
-
 }
 
 .container-fluid .heroDetails .heading h1 {
@@ -99,7 +114,6 @@ header {
   line-height: 6.15rem;
   margin: 0;
   word-break: keep-all;
- 
 }
 .heroDetails p {
   margin: 0;
@@ -109,8 +123,11 @@ header {
   line-height: 2rem;
   color: #00000099;
 }
+.search-bar {
+  max-width: 512px;
+}
 .search-bar input[type="text"] {
-  max-width: 366px;
+  width: auto;
   border-radius: 24px 0px 0px 24px;
   padding: 20px 18px 20px 18px;
   background-color: #fafafa;
@@ -280,42 +297,46 @@ header {
   border: none;
 }
 
-.nextButton .previous, .next {
+.nextButton .previous,
+.next {
   background-color: inherit;
 }
-.nextButton .previous, .next i{
-    color: #0000004d
+.nextButton .previous,
+.next i {
+  color: #0000004d;
 }
 .nextButton .previous:hover,
-.nextButton .next:hover{
+.nextButton .next:hover {
   background-color: #868cff;
 }
-.nextButton .previous:hover i{
-    color: white;
+.nextButton .previous:hover i {
+  color: white;
 }
-.nextButton .next:hover i{
-    color: white;
+.nextButton .next:hover i {
+  color: white;
 }
-.nextButton .previous-button, .next-button {
+.nextButton .previous-button,
+.next-button {
   background-color: inherit;
 }
-.nextButton .previous-button, .next-button i{
-    color: #0000004d
+.nextButton .previous-button,
+.next-button i {
+  color: #0000004d;
 }
 .nextButton .previous-button:hover,
-.nextButton .next-button:hover{
+.nextButton .next-button:hover {
   background-color: #868cff;
 }
-.nextButton .previous-button:hover i{
-    color: white;
+.nextButton .previous-button:hover i {
+  color: white;
 }
-.nextButton .next-button:hover i{
-    color: white;
+.nextButton .next-button:hover i {
+  color: white;
 }
-.internSheep-carousel .owl-nav{
-    display: none;
+.internSheep-carousel .owl-nav {
+  display: none;
 }
-.popular-carousel .owl-nav{
+.popular-carousel .owl-nav {
   display: none;
 }
 .internshipCourse1 {
@@ -325,22 +346,21 @@ header {
   padding-bottom: 15px;
 }
 .internshipCourse .card {
-  
   padding: 20px 30px;
   gap: 15px;
   border: none;
   border-radius: 10px;
 }
-.internshipCourse .card .cardImg{
-    max-width: 300px;
-    max-height: 300px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+.internshipCourse .card .cardImg {
+  max-width: 300px;
+  max-height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
-.internshipCourse .card img{
-    max-width: 100%;
-    max-height: 100%;
+.internshipCourse .card img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .internshipCourse .card-body {
   padding: 0;
@@ -415,7 +435,7 @@ header {
   position: relative;
 }
 .workImage img {
- width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -464,7 +484,7 @@ header {
   border-radius: 32px;
   position: relative;
   overflow: hidden;
-  margin: 102px 0px;
+  margin: 102px 0px      ;
 }
 .bannerHeader {
   z-index: 99;
@@ -556,7 +576,9 @@ header {
   justify-content: center;
 }
 
-
+.boardCaption {
+  padding-left: 100px;
+}
 .boardCaption h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -583,7 +605,7 @@ header {
   font-size: 1.5rem;
   line-height: 2.25rem;
   color: white;
-  width: 302px;
+  max-width: 302px;
   margin-top: 10px;
 }
 /* ----------Student Feedback section start----------- */
@@ -694,6 +716,9 @@ header {
   padding-top: 140px;
   padding-bottom: 100px;
 }
+.answer {
+  display: none;
+}
 .questions {
   border-top: 1px solid #00000033;
   border-bottom: 1px solid #00000033;
@@ -740,7 +765,7 @@ header {
   background-color: #fafafa;
   border: none;
   border-radius: 37px;
-  width: 312px;
+  width: 70%;
 }
 .companyHelp::placeholder {
   color: #aaaaaa;
@@ -784,7 +809,7 @@ footer .copyRight {
   display: flex;
   justify-content: space-between;
 }
-footer .copyRight * div {
+footer .copyRight div {
   font-family: "poppins", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
@@ -794,6 +819,13 @@ footer .terms-condition {
   display: flex;
   justify-content: space-between;
   gap: 125px;
+}
+footer .terms-condition a {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 footer .companyDetail {
   padding: 65px 130px;
@@ -806,9 +838,16 @@ footer .companyWorkDetail {
   font-size: 1rem;
   line-height: 1.25rem;
 }
-footer .companyWorkDetail > div {
+footer .companyWorkDetail div {
   padding: 0;
   margin-bottom: 48px;
+}
+footer .companyWorkDetail a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: black;
 }
 footer .socialMediaDetail .logo {
   margin-bottom: 56px;
@@ -819,162 +858,175 @@ footer .socialMediaDetail .logo {
 }
 /* footer section end */
 
-@media screen and (max-width:991px){
-  .heroDetails{
+@media screen and (max-width: 991px) {
+  .heroDetails {
     margin: auto;
     text-align: center;
-    padding-top:100px;
-    
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 12px;
+    align-items: center;
   }
-  .search-bar{
+  .search-bar {
     display: flex;
     justify-content: center;
+   
   }
-  .comment1{
+  .comment1 {
     right: 100px;
   }
-  .comment2{
+  .comment2 {
     right: 500px;
   }
-  .comment3{
+  .comment3 {
     left: 90px;
   }
-  .caption{
+  .caption {
     top: 800px;
   }
-  .bannerHeader{
+  .bannerHeader {
     font-size: 3rem;
   }
-  .round{
-    top:-10px
+  .round {
+    top: -10px;
   }
-  .round2{
-    top:-10px
+  .round2 {
+    top: -10px;
   }
-  .round3{
-    top:-10px
+  .round3 {
+    top: -10px;
   }
-  .round4{
-    top:-10px
+  .round4 {
+    top: -10px;
   }
-  
+
   footer .socialMediaDetail .logo {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width:767px){
-  
+@media screen and (max-width: 767px) {
   .container-fluid .heroDetails .heading h1 {
     font-size: 5rem;
   }
   .internshipDetails {
     padding: 50px 0px 72px 80px;
   }
-  .internshipDetails h1{
+  .internshipDetails h1 {
     font-size: 2rem;
     line-height: 4rem;
   }
-  .caption{
+  .caption {
     top: 650px;
   }
-  .guidelifyWork{
+  .boardCaption {
+    padding-left: 0px;
+  }
+  .guidelifyWork {
     padding-top: 0;
   }
-  .banner{
+  .banner {
     padding: 50px 55px 50px 75px;
   }
-  .bannerHeader{
+  .bannerHeader {
     font-size: 1.5rem;
   }
-  .comment1{
+  .comment1 {
+
+    top: 800px;
     right: 10px;
   }
-  .comment2{
-    top:80px;
+  .comment2 {
+    top: 80px;
     right: 300px;
   }
-  .round{
-    top:0px
+  .round {
+    top: 0px;
   }
-  .round2{
-    top:0px
+  .round2 {
+    top: 0px;
   }
-  .round3{
-    top:0px
+  .round3 {
+    top: 0px;
   }
-  .round4{
-    top:0px
+  .round4 {
+    top: 0px;
   }
   .studentFeedback {
     padding: 94px 0px 106px 80px;
   }
-  .studentFeedback h1{
+  .studentFeedback h1 {
     font-size: 2rem;
     line-height: 4rem;
   }
-  footer .terms-condition{
+  footer .terms-condition {
     gap: 25px;
   }
-  
 }
-@media screen and (max-width:575px){
+@media screen and (max-width: 575px) {
   .container-fluid .heroDetails .heading h1 {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
-  .heroDetails{
-    padding-top:50px;
+  .heroDetails {
+    padding-top: 50px;
     padding-bottom: 40px;
-    
   }
-  .feedbackHeading h1{
+  .studentFeedback {
+    padding: 50px 0px 60px 30px;
+  }
+  .feedbackHeading h1 {
     font-size: 2rem;
     line-height: 4rem;
   }
-  .company-growth .commitments{
+  .company-growth .commitments {
     text-align: center;
   }
   .internshipDetails {
     padding: 40px 0px 72px 50px;
   }
-  .internshipHeading h1{
+  .internshipHeading h1 {
     font-size: 2.5rem;
   }
   .nextButton {
     padding-right: 40px;
   }
-  .caption{
+  .caption {
     top: 450px;
-    max-width:400px ;
+    max-width: 400px;
   }
-  .workDetail h1{
+  .workDetail {
+    padding: 27px 50px 0px 50px;
+  }
+  .workDetail h1 {
     font-size: 2.5rem;
+    line-height: 4rem;
   }
-  .workDetail p{
+  .workDetail p {
     font-size: 1rem;
   }
-  .WorkFlow h1{
+  .WorkFlow h1 {
     font-size: 1.5rem;
-    line-height: 2rem
+    line-height: 2rem;
   }
-  .WorkFlow p{
-    font-size: .75rem;
+  .WorkFlow p {
+    font-size: 0.75rem;
   }
-  .bannerDetail button{
-    padding:  8px 16px ;
+  .bannerDetail button {
+    padding: 8px 16px;
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  .boardCaption{
+  .boardCaption {
     align-items: center;
     text-align: center;
     margin-top: 10px;
   }
- 
-  .boardCaption h1{
+
+  .boardCaption h1 {
     font-size: 2rem;
-    line-height: 4rem
+    line-height: 4rem;
   }
-  .companyLogos{
+  .companyLogos {
     padding: 90px 50px 0px 50px;
     gap: 60px;
   }
@@ -990,7 +1042,7 @@ footer .socialMediaDetail .logo {
     line-height: 1.25rem;
     margin: 0;
   }
-  .companyHelp{
+  .companyHelp {
     margin-top: 50px;
   }
   .companyHelp h1 {
@@ -1002,7 +1054,7 @@ footer .socialMediaDetail .logo {
     font-size: 1rem;
     line-height: 1.25rem;
   }
-  footer .copyRight{
+  footer .copyRight {
     padding: 50px 60px 50px 60px;
     display: block;
   }
@@ -1013,31 +1065,27 @@ footer .socialMediaDetail .logo {
     padding: 40px 80px;
     background-color: #fafafa;
   }
-  .socialMediaIcon >div{
+  .socialMediaIcon > div {
     width: max-content;
     display: flex;
- 
   }
   footer .companyWorkDetail {
     margin-top: 20px;
   }
   footer .companyWorkDetail > div {
     margin-bottom: 20px;
-    width:150px;
-    
+    width: 150px;
   }
   .company-growth h1 {
     font-size: 3rem;
     line-height: 4rem;
   }
   .company-growth p {
-    
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  .growth > div{
+  .growth > div {
     margin-bottom: 10px;
-    
   }
   .company-growth .commitments h1 {
     font-size: 3rem;
@@ -1045,6 +1093,75 @@ footer .socialMediaDetail .logo {
   }
   .company-growth .commitments p {
     font-size: 1rem;
-    line-height:1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .comment2{
+    top: 80px;
+    right: 30px;
+  }
+  .comment3{
+    left: 10px;
+  }
+  .boardCaption button{
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .banner {
+    margin: 52px 0px;
+    padding: 30px;
+  }
+  .bannerHeader {
+    line-height: 2.25rem;
+  }
+  .bannerDetail {
+    padding-top: 10px;
+    line-height: 1.5rem;
+  
+  }
+  .bannerDetail button {
+    border-radius: 64px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .caption{
+    top: 250px;
+    max-width: 307px;
+    max-height: 270px;
+    padding: 15px;
+  }.captionHeader {
+    word-wrap: break-word;
+    margin-bottom: 2px;
+  }
+  .caption p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+  }
+  .company-growth .commitments h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .internshipHeading h1 {
+    font-size: 1.5rem;
+  }
+  .workDetail h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .feedbackHeading h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+  .companyLogos h1 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .email{
+    flex-direction: column;
   }
 }
