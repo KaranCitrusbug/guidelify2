@@ -101,5 +101,17 @@ $(document).ready(function () {
 
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
-  answer.style.display = answer.style.display === "none" ? "block" : "none";
+  answer.style.display = answer.style.display === "block" ? "none" : "block";
+  console.log(element)
+  const plus = element.querySelector(".plus")
+  if(answer.style.display == 'none'){
+    plus.classList.remove("fa-minus")
+    plus.classList.add("fa-plus")
+    
+  }
+  if(answer.style.display == "block"){
+    plus.classList.remove("fa-plus")
+    plus.classList.add("fa-minus")
+  }
+  
 }
