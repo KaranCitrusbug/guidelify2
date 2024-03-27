@@ -5,7 +5,7 @@ $(document).ready(function () {
     dots: false,
     margin: 20,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 10000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -38,7 +38,7 @@ $(document).ready(function () {
     dots: false,
     margin: 40,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 10000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -72,7 +72,7 @@ $(document).ready(function () {
     dots: false,
     margin: 40,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 10000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -102,7 +102,6 @@ $(document).ready(function () {
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
   answer.style.display = answer.style.display === "block" ? "none" : "block";
-  console.log(element)
   const plus = element.querySelector(".plus")
   if(answer.style.display == 'none'){
     plus.classList.remove("fa-minus")
