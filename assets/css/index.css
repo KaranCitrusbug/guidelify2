@@ -52,14 +52,7 @@ header {
   line-height: 1.5rem;
   color: #000000;
 }
-.show{
-  margin-top: 20px;
- 
-}
-.show ul{
-  margin-bottom: 20px;
-  padding-left: 30px;
-}
+
 /* links section end */
 
 /* header button start */
@@ -85,29 +78,34 @@ header {
 /* -----------main section start ------------------------------ */
 
 /* -----hero section----- */
+.container{
+  max-width: 80%;
+  margin: auto;
+}
+.heroSection .container{
+  margin-right: 0;
+  max-width: 90%;
+  padding: 0;
+}
 
 .hero .heroImage {
+  max-width: 100%;
   height: 900px;
-
   padding: 0;
 }
 .heroDetails {
   gap: 44px;
-  padding-left: 10%;
+  padding-right: 150px;
 }
 .heroImage img {
   width: auto;
   height: 100%;
   object-fit: cover;
 }
-.container-fluid {
-  padding: 0;
-}
-.container-fluid .heroDetails .heading {
+.heroDetails .heading {
   gap: 28px;
 }
-
-.container-fluid .heroDetails .heading h1 {
+.heroDetails .heading h1 {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: 6rem;
@@ -126,9 +124,16 @@ header {
 .search-bar {
   max-width: 512px;
 }
+.input-group{
+  flex-wrap: nowrap;
+}
 .search-bar input[type="text"] {
   width: auto;
-  border-radius: 24px 0px 0px 24px;
+  /* border-radius: 24px 0px 0px 24px; */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 24px;
   padding: 20px 18px 20px 18px;
   background-color: #fafafa;
   border: 1px solid #00000033;
@@ -266,9 +271,18 @@ header {
 /*------------------------ Company growth section end------------- */
 
 /* -------------internshipDetails section start -----------------------*/
-.internshipDetails {
-  padding: 122px 0px 72px 100px;
+.internshipSection{
   background-color: #f5f7f9;
+}
+.internshipSection .container{
+  max-width: 90%;
+  margin-right: 0;
+}
+
+.internshipDetails {
+  padding-top: 122px;
+  padding-bottom: 72px;
+  
 }
 
 .internshipHeading h1 {
@@ -399,14 +413,17 @@ header {
 /* ----------------------internship section end----------------- */
 
 /* --------------guidelifyWork section start -----------------*/
+#work.container{
+  max-width: 90%;
+}
 .guidelifyWork {
-  margin-right: 100px;
   padding: 120px 0px 72px 0px;
   overflow: hidden;
 }
 
 .workDetail {
-  padding: 27px 120px 0px 100px;
+  padding-top: 27px;
+  padding-left: 50px;
 }
 .workDetail h1 {
   margin: 0;
@@ -445,13 +462,13 @@ header {
 }
 .workImage {
   position: relative;
-  max-width: 100%;
-  max-width: 100%;
+  max-width: 619px;
+  height: 900px;
 
 }
 .workImage img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .caption {
@@ -572,11 +589,9 @@ header {
 
 /* ----------leader-board section start------- */
 .leader-board {
-  margin: 119px 0px 115px 0px;
+  padding: 30px 0px 115px 0px;
 }
-.contentMaker {
- 
-}
+
 
 .contentMaker img {
   aspect-ratio: 1/1;
@@ -648,8 +663,13 @@ header {
 }
 /* ----------Student Feedback section start----------- */
 
+#testimonials .container{
+  max-width: 90%;
+  margin-right: 0;
+}
 .studentFeedback {
-  padding: 94px 0px 106px 120px;
+  padding-top: 94px;
+  padding-bottom: 106px;
 }
 .feedbackHeading h1 {
   font-family: "Poppins", sans-serif;
@@ -770,7 +790,7 @@ header {
   margin: 0;
 }
 .questions .plusSign {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #3461ff;
   display: flex;
@@ -839,11 +859,16 @@ footer {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: #000000;
+}
+footer .container-fluid{
+  max-width: 90%;
 }
 footer .copyRight {
   background-color: #000000;
   color: white;
-  padding: 50px 85px 50px 100px;
+  padding-top: 50px;
+  padding-bottom:50px;
   display: flex;
   justify-content: space-between;
 }
@@ -866,9 +891,12 @@ footer .terms-condition a {
   line-height: 1.25rem;
 }
 footer .companyDetail {
-  padding: 65px 130px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   background-color: #fafafa;
+
 }
+
 footer .companyWorkDetail {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
@@ -897,6 +925,9 @@ footer .socialMediaDetail .logo {
 /* footer section end */
 
 @media screen and (max-width: 991px) {
+  .heroSection .container{
+    margin-right: auto;
+  }
   .heroDetails {
     margin: auto;
     text-align: center;
@@ -904,13 +935,13 @@ footer .socialMediaDetail .logo {
     width: 100%;
     padding-left: 12px;
     align-items: center;
+    padding-right: 0px;
   }
   .search-bar {
     display: flex;
     justify-content: center;
-   
   }
-  .comment1 {
+  /* .comment1 {
     right: 100px;
   }
   .comment2 {
@@ -918,10 +949,17 @@ footer .socialMediaDetail .logo {
   }
   .comment3 {
     left: 90px;
+  } */
+  .workDetail {
+    padding-top: 27px;
+    padding-left: 20px;
   }
-  .caption {
-    top: 800px;
+  .workImage {
+    max-width: 100%;
+    height: 900px;
+  
   }
+ 
   .bannerHeader {
     font-size: 3rem;
   }
@@ -943,12 +981,12 @@ footer .socialMediaDetail .logo {
   }
 }
 @media screen and (max-width: 767px) {
-  .container-fluid .heroDetails .heading h1 {
+   .heroDetails .heading h1 {
     font-size: 5rem;
   }
-  .internshipDetails {
+  /* .internshipDetails {
     padding: 50px 0px 72px 80px;
-  }
+  } */
   .internshipDetails h1 {
     font-size: 2rem;
     line-height: 4rem;
@@ -969,13 +1007,15 @@ footer .socialMediaDetail .logo {
     font-size: 1.5rem;
   }
   .comment1 {
-
     top: 800px;
     right: 10px;
   }
   .comment2 {
     top: 80px;
-    right: 300px;
+    right: 260px;
+  }
+  .comment3{
+    right: 260px;
   }
   .round {
     top: 0px;
@@ -989,9 +1029,9 @@ footer .socialMediaDetail .logo {
   .round4 {
     top: 0px;
   }
-  .studentFeedback {
+  /* .studentFeedback {
     padding: 94px 0px 106px 80px;
-  }
+  } */
   .studentFeedback h1 {
     font-size: 2rem;
     line-height: 4rem;
@@ -1001,7 +1041,7 @@ footer .socialMediaDetail .logo {
   }
 }
 @media screen and (max-width: 575px) {
-  .container-fluid .heroDetails .heading h1 {
+  .heroDetails .heading h1 {
     font-size: 3rem;
     line-height: 3.5rem;
   }
@@ -1009,9 +1049,7 @@ footer .socialMediaDetail .logo {
     padding-top: 50px;
     padding-bottom: 40px;
   }
-  .studentFeedback {
-    padding: 50px 0px 60px 30px;
-  }
+ 
   .feedbackHeading h1 {
     font-size: 2rem;
     line-height: 4rem;
@@ -1019,8 +1057,14 @@ footer .socialMediaDetail .logo {
   .company-growth .commitments {
     text-align: center;
   }
-  .internshipDetails {
-    padding: 40px 0px 72px 50px;
+  .comment1{
+    right: 0;
+  }
+  .comment2{
+    right: 50px;
+  }
+  .comment3{
+    right: 100px;
   }
   .internshipHeading h1 {
     font-size: 2.5rem;
@@ -1032,9 +1076,7 @@ footer .socialMediaDetail .logo {
     top: 450px;
     max-width: 400px;
   }
-  .workDetail {
-    padding: 27px 50px 0px 50px;
-  }
+  
   .workDetail h1 {
     font-size: 2.5rem;
     line-height: 4rem;
@@ -1072,7 +1114,7 @@ footer .socialMediaDetail .logo {
     margin-bottom: 40px;
   }
   .helpDesk {
-    padding: 70px 50px;
+    padding: 70px 10px;
   }
   .questions h1 {
     padding: 16px 5px;
@@ -1099,10 +1141,7 @@ footer .socialMediaDetail .logo {
   footer .terms-condition {
     margin-top: 20px;
   }
-  footer .companyDetail {
-    padding: 40px 80px;
-    background-color: #fafafa;
-  }
+
   .socialMediaIcon > div {
     width: max-content;
     display: flex;
@@ -1147,6 +1186,9 @@ footer .socialMediaDetail .logo {
     font-size: 1rem;
     line-height: 1.25rem;
   }
+  .internshipDetails{
+    padding-top: 50px;
+  }
   .banner {
     margin: 52px 0px;
     padding: 30px;
@@ -1165,12 +1207,16 @@ footer .socialMediaDetail .logo {
     font-size: 1rem;
     line-height: 1.25rem;
   }
-  .caption{
+  /* .caption{
     top: 250px;
     max-width: 307px;
     max-height: 270px;
     padding: 15px;
-  }.captionHeader {
+  } */
+  .studentFeedback{
+    padding-top: 50px;
+  }
+  .captionHeader {
     word-wrap: break-word;
     margin-bottom: 2px;
   }
@@ -1201,5 +1247,18 @@ footer .socialMediaDetail .logo {
   }
   .email{
     flex-direction: column;
+  }
+  .search-bar {
+    flex-direction: column;
+    gap: 20px;
+   align-items: center;
+    width: 100%;
+  }
+  .search-bar input[type="text"] {
+    width: 100%;
+    border-radius: 24px;
+  }
+  .searchButton {
+    border-radius:  24px;
   }
 }
