@@ -915,6 +915,9 @@ footer .companyWorkDetail a {
   line-height: 1.25rem;
   color: black;
 }
+footer .companyWorkDetail a:hover{
+  color: #868cff;
+}
 footer .socialMediaDetail .logo {
   margin-bottom: 56px;
   font-family: "Inter", sans-serif;
@@ -923,6 +926,7 @@ footer .socialMediaDetail .logo {
   line-height: 41.12px;
 }
 /* footer section end */
+
 
 @media screen and (max-width: 991px) {
   .heroSection .container{
